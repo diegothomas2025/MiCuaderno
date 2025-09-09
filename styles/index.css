@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== ESTILO GENERAL ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Fondo estilo VS Code */
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* ===== ENCABEZADOS ===== */
+h1, h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: black;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+/* ===== TEXTO ===== */
+h3 { 
+    margin: 0 20px 10px;
+    font-size: 1.1rem;
+}
+
+/* NAV MENU */
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.menu {
+    padding: 1rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+  margin: 0 1rem;
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: wheat;
+}
+
+.menu a:hover {
+    box-shadow: 0 0 15px white;
+}
+
+.micuaderno {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: rgba(255, 0, 0, 0.819);
+}
+
+/* ===== CONTENEDOR DE CÓDIGO ===== */
+.code-container {
+    position: relative;
+    margin: 0 20px 20px;
+    background-color: #252526; /* Fondo más claro que el body */
+    padding: 15px;
+    border-radius: 6px;
+}
+
+code {
+    font-size: 1.3rem;
+}
+
+pre {
+    border-radius: 6px;
+    overflow-x: auto;
+    padding: 15px;
+    
+}
+
+/* ===== BOTÓN COPIAR ===== */
+.copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 1rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background-color: #666;
+}
+
+/* SECTIONS */
+.string-date-type {
+  border-right: solid black 2rem;
+  border-left: solid black 2rem;
+  border-bottom: solid black 2rem;
+}
+
+.strings-title {
+  padding: 0 1rem;
+  background-color: black;
+  color: #ce9178;
+  margin: 0 0 2rem;
+}
+
+.number-date-type {
+  margin-top: 1.5rem;
+  border-right: solid black 2rem;
+  border-left: solid black 2rem;
+  border-bottom: solid black 2rem;
+}
+
+.numbers-title {
+  padding: 0 1rem;
+  background-color: black;
+  color: #b5cea8;
+  margin: 0 0 2rem;
+}
+/* ===== COLORES ===== */
+
+.keyword {
+  color: #569cd6; /* Azul keywords */
+}
+
+.method {
+  color: #dcdcaa; /* Amarillo para métodos */
+}
+
+.property {
+  color: #9cdcfe; /* Celeste para propiedades */
+}
+
+.variable {
+  color: #49a8dc; /* Celeste igual que propiedades */
+}
+
+.string {
+  color: #ce9178; /* Naranja para strings */
+}
+
+.number {
+  color: #b5cea8; /* Verde numbers */
+}
+
+.comment {
+  color: #6a9955; /* Verde oscuro para comentarios */
+}
+
+.template {
+  color: #ce9178; /* Naranja similar a string */
+}
+
+.interpolation {
+  color: #f49cfe; /* Azul claro para ${variables} */
+}
+
+.texto {
+    color: rgba(255, 255, 255, 0.822); /*Blanco para Definiciones */
+}
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>micuaderno</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/index.css">
+  <!-- JS -->
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/highlight.js" defer></script>
+  </head>
+  <body>
+  <header>
+    <strong class="micuaderno">MiCuaderno</strong>
+    <nav class="menu">
+            <ul>
+                <li><a href="index.html">Strings</a></li>
+                <li><a href="numbers.html">Numbers</a></li>
+                <li><a href="#">Booleans</a></li>
+                <li><a href="#">Objects</a></li>
+            </ul>
+        </nav>
+  </header>
+  <main>
+    <h1>Tipo de Datos</h1>
+
+    <section class="string-date-type">
+      <h2 class="strings-title">Strings</h2>
+      <h3>Ejemplo</h3>
+
+      <div class="code-container">
+        <button class="copy-btn">Copiar</button>
+        <pre><code>
+<span class="keyword">const</span> <span class="variable">producto</span> = <span class="string">'Monitor 20 Pulgadas'</span>;
+
+<span class="keyword">const</span> <span class="variable">oferta</span> = <span class="string">'En Promocion'</span>;
+        </code></pre>
+      </div>
+
+      <h3>Metodos</h3>
+      <div class="code-container">
+        <button class="copy-btn">Copiar</button>
+        <pre><code>
+<strong>1</strong> <span class="method">.length</span><span class="interpolation">()</span>: <span class="texto">Devuelve el número de caracteres del string.</span>
+
+<span class="keyword">console</span>.<span class="method">log</span>(<span class="variable">producto</span>.<span class="property">length</span>); <span class="comment">// resultado: 19</span>
+        </code></pre>
+      </div>
+    
+      <div class="code-container">
+        <button class="copy-btn">Copiar</button>
+        <pre><code>
+<strong>2</strong> <span class="method">.includes</span><span class="interpolation">()</span>: <span class="texto">Determina si una cadena de texto puede ser encontrada dentro de otra.</span>
+
+<span class="keyword">console</span>.<span class="method">log</span>(<span class="variable">producto</span>.<span class="method">includes</span>(<span class="string">'Monitor'</span>)); <span class="comment">// resultado: true</span>
+        </code></pre>
+      </div>
+
+      <div class="code-container">
+        <button class="copy-btn">Copiar</button>
+        <pre><code>
+<strong>3</strong> <span class="comment">// template literals (template strings)</span>
+      
+<span class="keyword">console</span>.<span class="method">log</span>(<span class="template">`El producto <span class="interpolation">${producto}</span> tiene un precio de $<span class="interpolation">${precio}</span>!`</span>);
+        </code></pre>
+      </div>
+
+      <div class="code-container">
+        <button class="copy-btn">Copiar</button>
+        <pre><code>
+<strong>4</strong> <span class="method">.trim</span><span class="interpolation">()</span>: <span class="texto">Elimina los espacios en blanco al inicio y al final de un string.</span>
+
+<span class="keyword">console</span>.<span class="method">log</span>(<span class="variable">producto</span>.<span class="method">trim</span>()); <span class="comment">// resultado: cambia de "  Monitor  " a "Monitor"</span>
+        </code></pre>
+      </div>
+      <!-- 4. replace() -->
+      <div class="code-container">
+        <button class="copy-btn">Copiar</button>
+        <pre><code>
+<strong>5</strong> <span class="method">.replace</span><span class="interpolation">()</span>: <span class="texto">Reemplaza una parte de un string por otra.</span>
+
+<span class="keyword">console</span>.<span class="method">log</span>(<span class="variable">producto</span>.<span class="method">replace</span>(<span class="string">'Pulgadas'</span>, <span class="string">'"'</span>)); <span class="comment">// resultado: Monitor 20"</span>
+        </code></pre>
+      </div>
+
+      <!-- 5. slice() -->
+      <div class="code-container">
+        <button class="copy-btn">Copiar</button>
+        <pre><code>
+<strong>5</strong> <span class="method">.slice</span><span class="interpolation">()</span>: <span class="texto">Devuelve una parte del string desde un índice inicial hasta uno final (sin incluirlo).</span>
+
+<span class="keyword">console</span>.<span class="method">log</span>(<span class="variable">producto</span>.<span class="method">slice</span>(<span class="number">0</span>, <span class="number">7</span>)); <span class="comment">// resultado: "Monitor"</span>
+        </code></pre>
+      </div>
+
+      <!-- 6. substring() -->
+      <div class="code-container">
+        <button class="copy-btn">Copiar</button>
+        <pre><code>
+<strong>6</strong> <span class="method">.substring</span><span class="interpolation">()</span>: <span class="texto">Devuelve una parte del string entre dos índices (no acepta negativos).</span>
+
+<span class="keyword">console</span>.<span class="method">log</span>(<span class="variable">producto</span>.<span class="method">substring</span>(<span class="number">0</span>, <span class="number">7</span>)); <span class="comment">// resultado: "Monitor"</span>
+        </code></pre>
+      </div>
+
+      <!-- 7. charAt() -->
+      <div class="code-container">
+        <button class="copy-btn">Copiar</button>
+        <pre><code>
+<strong>7</strong> <span class="method">.charAt</span><span class="interpolation">()</span>: <span class="texto">Devuelve el carácter en la posición indicada del string.</span>
+
+<span class="keyword">console</span>.<span class="method">log</span>(<span class="variable">producto</span>.<span class="method">charAt</span>(<span class="number">0</span>)); <span class="comment">// resultado: "M"</span>
+        </code></pre>
+      </div>
+
+      <!-- 8. repeat() -->
+      <div class="code-container">
+        <button class="copy-btn">Copiar</button>
+        <pre><code>
+<strong>8</strong><span class="method">.repeat</span><span class="interpolation">()</span>: <span class="texto">Repite un string la cantidad de veces que se le indique.</span>
+
+<span class="keyword">const</span> <span class="variable">oferta</span> = <span class="string">' En Promocion'</span>.<span class="method">repeat</span>(<span class="number">3</span>);
+<span class="keyword">console</span>.<span class="method">log</span>(<span class="template">`El <span class="interpolation">${producto}</span> esta<span class="interpolation">${oferta}</span>`</span>); <span class="comment">// resultado: "El Monitor... esta En Promocion En Promocion En Promocion"</span>
+        </code></pre>
+      </div>
+
+      <!-- 9. split() -->
+      <div class="code-container">
+        <button class="copy-btn">Copiar</button>
+        <pre><code>
+<strong>9</strong><span class="method">.split</span><span class="interpolation">()</span>: <span class="texto">Divide un string usando el separador que se le indique y devuelve esas partes en un array.</span>
+
+<span class="keyword">const</span> <span class="variable">frutas</span> = <span class="string">"manzana,pera,banana"</span>;
+<span class="keyword">console</span>.<span class="method">log</span>(<span class="variable">frutas</span>.<span class="method">split</span>(<span class="string">","</span>)); <span class="comment">// resultado: ["manzana", "pera", "banana"]</span>
+
+        </code></pre>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
